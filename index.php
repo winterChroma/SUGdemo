@@ -1,10 +1,6 @@
 <?php 
 
-try {
-  $pdo = new PDO('mysql:host=127.0.0.1; dbname=mytodo', 'root', '');
-} catch (PDOException $e) {
-  die('Could not connect.');
-}
+require './db_conn.php';
 
 $statement = $pdo -> prepare('SELECT * from todos');
 $statement-> execute();
