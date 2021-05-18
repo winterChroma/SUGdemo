@@ -1,10 +1,6 @@
 <?php 
 
-try {
-  $pdo = new PDO('mysql:host=127.0.0.1; dbname=mytodo', 'root', '');
-} catch (PDOException $e) {
-  die('Could not connect.');
-}
+require "./db_conn.php";
 
 if(isset($_POST['id'])) {
   $id = $_POST['id'];
@@ -20,6 +16,8 @@ if(isset($_POST['id'])) {
     } else {
       echo 0;
     }
+
+    $pdo = null;
   }
 }
 
