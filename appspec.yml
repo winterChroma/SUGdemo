@@ -1,7 +1,0 @@
-version: 0.0
-os: linux
-hooks:
-  ApplicationStart:
-    - location: env_var.sh
-      runas: root
-      timeout: 300
