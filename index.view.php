@@ -13,7 +13,7 @@
 <body>
   <div class="container-sm">
     <div class="card shadow rounded">
-      <h1 class="card-title">Symfony User Group Todo List</h1>
+      <h1 class="card-title">Symfony User Group is Awesome! <3 Todo List</h1>
       <div class="form-div">
         <form action="add_task.php" method="post" autocomplete="off" class="row">
           <div class="col">
